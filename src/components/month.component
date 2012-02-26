@@ -1,0 +1,77 @@
+<apex:component controller="MonthDetail">
+  <apex:attribute name="altMonthNumber" type="Integer" assignTo="{!altMonthNumber}" required="false" description="The month number." />
+  <apex:attribute name="altYearNumber" type="Integer" assignTo="{!altYearNumber}" required="false" description="The year number." />
+  <apex:attribute name="altMonth" type="Month" assignTo="{!altMonth}" required="false" description="The month if you want something custom." />
+  <apex:attribute name="altTitle" type="String" assignTo="{!altTitle}" required="false" description="The title of the pageblock that precedes the month name." />
+  <apex:attribute name="altRowHeight" type="Integer" assignTo="{!altRowHeight}" required="false" description="The custom row height." />
+
+  <style>
+    
+    table.month tr {
+      height: {!rowHeight}px;
+      vertical-align: middle;
+    }
+    
+    table.month .headerRow {
+      height: 15px;
+    }
+    
+    table.month span.sameMonth {
+      
+    }
+    
+    table.month span.datebackground {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;      
+    }
+    
+    table.month span.differentMonthDate {
+      background: #E5E5E5;
+    }
+    
+    table.month span.perspectiveDate {
+      background: #FF6;
+    }
+    
+    table.month .measureValue {
+      position: relative;
+      font-weight: bold;
+      font-size: 20px;
+      z-index: 2;
+    }
+    
+    table.month .dayNumber {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      padding: 2px;
+      width: 14px;
+      font-size: 8px;
+    }
+    
+    table.month td {
+      width: 14%;
+      position: relative;
+      text-align: center;
+    }
+  </style>
+
+  <apex:outputpanel styleClass="noButtonPageBlock">
+    <apex:pageblock title="{!if(not(isnull(title)),title & ' ','')}{!month.longName} {!month.yearNumber}">
+    <apex:pageblocktable value="{!month.weeks}" var="week" styleClass="month" headerClass="headerRow">
+      <apex:repeat value="{!month.weekDayNums}" var="dayNum">
+        <apex:column headervalue="{!shortDayNameMap[dayNum]}">
+          <span class="datebackground {!if(week[dayNum].dateValue = month.perspectiveDate,'perspectiveDate','')} {!if(week[dayNum].isSameMonth,'sameMonthDate','differentMonthDate')}"></span>
+          <apex:outputtext value="{0,number,0}" styleClass="measureValue">
+            <apex:param value="{!week[dayNum].measureValue}" />
+          </apex:outputtext>        
+          <span class="dayNumber">{!week[dayNum].num}</span>
+        </apex:column>
+      </apex:repeat>
+    </apex:pageblocktable>
+    </apex:pageblock>
+  </apex:outputpanel>
+</apex:component>
