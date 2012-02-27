@@ -1,6 +1,7 @@
 <apex:component controller="MonthDetail">
-  <apex:attribute name="altMonthNumber" type="Integer" assignTo="{!altMonthNumber}" required="false" description="The month number." />
   <apex:attribute name="altYearNumber" type="Integer" assignTo="{!altYearNumber}" required="false" description="The year number." />
+  <apex:attribute name="altMonthNumber" type="Integer" assignTo="{!altMonthNumber}" required="false" description="The month number." />
+  <apex:attribute name="altDayNumber" type="Integer" assignTo="{!altDayNumber}" required="false" description="The day number." />
   <apex:attribute name="altMonth" type="Month" assignTo="{!altMonth}" required="false" description="The month if you want something custom." />
   <apex:attribute name="altTitle" type="String" assignTo="{!altTitle}" required="false" description="The title of the pageblock that precedes the month name." />
   <apex:attribute name="altRowHeight" type="Integer" assignTo="{!altRowHeight}" required="false" description="The custom row height." />

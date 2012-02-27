@@ -1,0 +1,7 @@
+<apex:page controller="ApexCalendarExample">
+  <apex:sectionheader title="Example Month Page" />
+  <c:month altYearNumber="1977" altMonthNumber="12" />
+	<c:month altMonth="{!birthMonth}" />
+	
+</apex:page>
+

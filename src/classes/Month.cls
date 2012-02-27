@@ -1,11 +1,12 @@
 public class Month {
   
-  public final Integer DEF_BUFFER_WEEKS = 2;
+  public final Integer DEF_BUFFER_WEEKS = 0;
   public final Integer DAYS_PER_WEEK = 7;
   
-	public Month(Integer monthNumber, Integer yearNumber) {
-		this.monthNumber = monthNumber;
+	public Month(Integer yearNumber, Integer monthNumber, Integer dayNumber) {
 		this.yearNumber = yearNumber;
+		this.monthNumber = monthNumber;
+		this.dayNumber = dayNumber;
 	}
 	
 	public Month(Date perspectiveDate) {
@@ -22,13 +23,25 @@ public class Month {
 	  get; set;
 	}
 	
-	public Date perspectiveDate {
+	public Integer dayNumber {
 	  get; set;
+	}
+	
+	public Date perspectiveDate {
+	  get {
+	    if (perspectiveDate == null) {
+	      if (yearNumber != null && monthNumber != null && dayNumber != null) {
+	        return Date.newInstance(yearNumber, monthNumber, dayNumber);
+	      }
+	    }
+      return perspectiveDate;
+	  }
+	  set;
 	}
 	
 	public String longName {
 	  get {
-	    return Datetime.newInstance(perspectiveDate,Time.newInstance(0,0,0,0)).format('MMMM');
+	    return Datetime.newInstance(Date.newInstance(yearNumber, monthNumber,1),Time.newInstance(0,0,0,0)).format('MMMM');
 	  }
 	}
 	
