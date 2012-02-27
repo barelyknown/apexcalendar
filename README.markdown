@@ -8,13 +8,13 @@ If you just need a calendar, you can use the calendar component in any page to g
 
 `<c:month altMonthNumber="9" altYearNumber="1977" />`
 
-![Example 1](blob/master/img/apexcalendar_example_1.png "Example 1")
+![Example 1](https://github.com/seandevine/apexcalendar/blob/master/img/apexcalendar_example_1.png?raw=true "Example 1")
 
 If you want to highlight a particular date, pass in the day number also.
 
 `<c:month altMonthNumber="9" altYearNumber="1977" altDayNumber="9" />`
 
-![Example 2](blob/master/img/apexcalendar_example_2.png "Example 2")
+![Example 2](https://github.com/seandevine/apexcalendar/blob/master/img/apexcalendar_example_2.png?raw=true "Example 2")
 
 Adding Data
 -----------
@@ -42,7 +42,7 @@ Now I can pass the birthMonth property into my component and it will show my age
 
 `<c:month altMonth="{!birthMonth}" />`
 
-![Example 3](blob/master/img/apexcalendar_example_3.png "Example 3")
+![Example 3](https://github.com/seandevine/apexcalendar/blob/master/img/apexcalendar_example_3.png?raw=true "Example 3")
 
 Adding Weeks
 ------------
@@ -54,7 +54,7 @@ Let's pretend that I added the following line to the controller example above af
 
 Here's what the calendar would look like with the buffer weeks added:
 
-![Example 4](blob/master/img/apexcalendar_example_4.png "Example 4")
+![Example 4](https://github.com/seandevine/apexcalendar/blob/master/img/apexcalendar_example_4.png?raw=true "Example 4")
 
 Just the Start
 --------------
