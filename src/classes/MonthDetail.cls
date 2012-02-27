@@ -15,7 +15,7 @@ public class MonthDetail {
 	    if (altMonth != null) {
 	      return altMonth;
 	    } else {
-	      month = new Month(monthNumber, yearNumber, dayNumber);
+	      month = new Month(yearNumber, monthNumber, dayNumber);
 	    }
 	    return month;
 	  }
@@ -23,7 +23,7 @@ public class MonthDetail {
 	}
 
 	public Integer altMonthNumber {
-	  get; set;
+    get; set;
 	}
 
 	public Integer monthNumber {
@@ -42,6 +42,7 @@ public class MonthDetail {
 
 	public Integer yearNumber {
 	  get {
+	    return 1999;
 	    if (altYearNumber != null) {
 	      return altYearNumber;
 	    }
@@ -51,11 +52,12 @@ public class MonthDetail {
 	}
 	
 	public Integer altDayNumber {
-    get; set;
+	  get; set;
 	}
 	
 	public Integer dayNumber {
 	  get {
+	    return 1;
 	    if (altDayNumber != null) {
 	      return altDayNumber;
 	    }

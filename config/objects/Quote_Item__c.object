@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>LINEHAUL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FUEL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Charge_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fixed_Rate__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Fixed Rate</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Free_Primary_Units__c</fullName>
+        <externalId>false</externalId>
+        <label>Free Primary Units</label>
+        <precision>13</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Free_Units__c</fullName>
+        <externalId>false</externalId>
+        <label>Free Units</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Editable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Editable</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Selected</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Max_Units__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Units</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maximum_Charge__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Charge</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Measure_Condition_Boolean__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Measure Condition Boolean</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Measure_Condition_Max__c</fullName>
+        <externalId>false</externalId>
+        <label>Measure Condition Max</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measure_Condition_Min__c</fullName>
+        <externalId>false</externalId>
+        <label>Measure Condition Min</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measure_Condition_Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Measure Condition Note</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measure_Condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Measure Condition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>DETENTION MINUTES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>STOPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MILES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PALLET SPOTS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POUNDS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LIFTGATE STOPS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WEIGHT PER PALLET SPOT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CENTS PER FUEL GALLON</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CANCELLATION HOURS NOTICE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>INTERMODAL ALLOWED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CONSOLIDATION ALLOWED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TEAM SERVICE REQUIRED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REFRIGERATION REQUIRED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LUMPER CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Measure</label>
+        <picklist>
+            <picklistValues>
+                <fullName>LOAD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MILE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POUND</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LINEHAUL CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LINEHAUL AND FUEL CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PALLET SPOT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LUMPER CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DETENTION MINUTE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LIFTGATE STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LAYOVER DAY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COD STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RECONSIGNMENT STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REDELIVERY ATTEMPT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CENT PER FUEL GALLON</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REMAINING CAPACITY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_Charge__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Charge</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Quote__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote</label>
+        <referenceTo>Quote__c</referenceTo>
+        <relationshipLabel>Quote Items</relationshipLabel>
+        <relationshipName>Quote_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Second_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Second Measure</label>
+        <picklist>
+            <picklistValues>
+                <fullName>MILE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POUND</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LOAD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LINEHAUL CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LINEHAUL AND FUEL CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PALLET SPOT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LUMPER CHARGES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DETENTION MINUTE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LIFTGATE STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LAYOVER DAY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COD STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RECONSIGNMENT STOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REDELIVERY ATTEMPT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CENT PER FUEL GALLON</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Second_Units__c</fullName>
+        <externalId>false</externalId>
+        <label>Second Units</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Total</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>LINEHAUL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FUEL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ACCESSORIALS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TOTAL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Units__c</fullName>
+        <externalId>false</externalId>
+        <label>Units</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Rate Item</label>
+    <nameField>
+        <displayFormat>QI-{000000000}</displayFormat>
+        <label>Quote Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Rate Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Measure_Is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(isblank(text(Measure__c)),isnull(text(Measure__c)))</errorConditionFormula>
+        <errorMessage>A measure is required for each quote item.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Rate_Is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>Rate__c = null</errorConditionFormula>
+        <errorMessage>Quote items rates cannot be null.</errorMessage>
+    </validationRules>
+</CustomObject>

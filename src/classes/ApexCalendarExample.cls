@@ -1,13 +1,4 @@
 public class ApexCalendarExample {
-
-  public Month thisMonth {
-    get {
-      thisMonth = new Month(System.today());
-      thisMonth.addMeasureValueToDate(System.today().addDays(-1),45);
-      return thisMonth;
-    }
-    set;
-  }
   
   public Month birthMonth {
     get {

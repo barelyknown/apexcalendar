@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <fields>
+        <fullName>Day_Int__c</fullName>
+        <externalId>false</externalId>
+        <label>Day Int</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Editable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Editable</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Selected</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <referenceTo>Location__c</referenceTo>
+        <relationshipLabel>Location Hours</relationshipLabel>
+        <relationshipName>LocationHours</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Note__c</fullName>
+        <externalId>false</externalId>
+        <label>Note</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Receiving_Close_Hour__c</fullName>
+        <externalId>false</externalId>
+        <label>Receiving Close Hour</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receiving_Close_Minute__c</fullName>
+        <externalId>false</externalId>
+        <label>Receiving Close Minute</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receiving_Close_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(not(isnull(Receiving_Close_Hour__c)),text(Receiving_Close_Hour__c) &amp;&quot;:&quot;&amp; lpad(text(Receiving_Close_Minute__c),2,&quot;0&quot;),&quot;&quot;)</formula>
+        <label>Receiving Close Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receiving_Open_Hour__c</fullName>
+        <externalId>false</externalId>
+        <label>Receiving Open Hour</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receiving_Open_Minute__c</fullName>
+        <externalId>false</externalId>
+        <label>Receiving Open Minute</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receiving_Open_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(not(isnull(Receiving_Open_Hour__c)),text(Receiving_Open_Hour__c) &amp;&quot;:&quot;&amp; lpad(text(Receiving_Open_Minute__c),2,&quot;0&quot;),&quot;&quot;)</formula>
+        <label>Receiving Open Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Close_Hour__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Close Hour</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Close_Minute__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Close Minute</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Close_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(not(isnull(Shipping_Close_Hour__c)),text(Shipping_Close_Hour__c) &amp;&quot;:&quot;&amp; lpad(text(Shipping_Close_Minute__c),2,&quot;0&quot;),&quot;&quot;)</formula>
+        <label>Shipping Close Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Open_Hour__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Open Hour</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Open_Minute__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Open Minute</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Open_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(not(isnull(Shipping_Open_Hour__c)),text(Shipping_Open_Hour__c) &amp;&quot;:&quot;&amp; lpad(text(Shipping_Open_Minute__c),2,&quot;0&quot;),&quot;&quot;)</formula>
+        <label>Shipping Open Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Location Hours</label>
+    <nameField>
+        <label>Location Hours Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Location Hours</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Day_Integer_Range</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(Day_Int__c &lt; 1,Day_Int__c &gt; 7)</errorConditionFormula>
+        <errorMessage>The location hour day must be an integer between 1 and 7.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hour_and_Minutes</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(Shipping_Open_Hour__c &lt; 0,Shipping_Open_Hour__c &gt; 23,Shipping_Open_Minute__c&lt;0,Shipping_Open_Minute__c&gt;59,Shipping_Close_Hour__c &lt; 0,Shipping_Close_Hour__c &gt; 23,Shipping_Close_Minute__c&lt;0,Shipping_Close_Minute__c&gt;59,Receiving_Open_Hour__c &lt; 0,Receiving_Open_Hour__c &gt; 23,Receiving_Open_Minute__c&lt;0,Receiving_Open_Minute__c&gt;59,Receiving_Close_Hour__c &lt; 0,Receiving_Close_Hour__c &gt; 23,Receiving_Close_Minute__c&lt;0,Receiving_Close_Minute__c&gt;59)</errorConditionFormula>
+        <errorMessage>Hours must be between 0 - 23. Minutes must be between 0 - 59.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hours_and_Minutes_Not_Null</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(and(isnull(Shipping_Open_Hour__c),Shipping_Open_Minute__c &gt; 0),and(isnull(Shipping_Close_Hour__c),Shipping_Close_Minute__c &gt; 0),and(isnull(Receiving_Open_Hour__c),Receiving_Open_Minute__c &gt; 0),and(isnull(Receiving_Close_Hour__c),Receiving_Close_Minute__c &gt; 0))</errorConditionFormula>
+        <errorMessage>If you wish to enter a time, you must include the hour.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Receiving_Open_Time_Must_Have_Close_Time</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(and(not(isnull(Receiving_Open_Hour__c)),isnull(Receiving_Close_Hour__c)),and(isnull(Receiving_Open_Hour__c),not(isnull(Receiving_Close_Hour__c))))</errorConditionFormula>
+        <errorMessage>Receiving hours must have open and close times.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Shipping_Open_Time_Must_Have_Close_Time</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(and(not(isnull(Shipping_Open_Hour__c)),isnull(Shipping_Close_Hour__c)),and(isnull(Shipping_Open_Hour__c),not(isnull(Shipping_Close_Hour__c))))</errorConditionFormula>
+        <errorMessage>Location hours must have open and close times.</errorMessage>
+    </validationRules>
+</CustomObject>
