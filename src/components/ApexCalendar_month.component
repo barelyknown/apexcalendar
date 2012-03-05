@@ -6,6 +6,7 @@
   <apex:attribute name="altTitle" type="String" assignTo="{!altTitle}" required="false" description="The title of the pageblock that precedes the month name." />
   <apex:attribute name="altRowHeight" type="Integer" assignTo="{!altRowHeight}" required="false" description="The custom row height." />
 
+  <apex:stylesheet value="{!URLFOR($Resource.ApexCalendar, 'css/calendar.css')}"/>
 
   <apex:outputpanel styleClass="noButtonPageBlock">
     <apex:pageblock title="{!if(not(isnull(title)),title & ' ','')}{!month.longName} {!month.yearNumber}">
