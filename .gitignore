@@ -6,3 +6,5 @@ config/settings.yaml
 src/package.xml
 
 .DS_Store
+
+.settings
